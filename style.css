@@ -111,12 +111,13 @@ nav{
     background-color: #555;
     border-radius: 4px;
   }
-.main {
-  position: relative;
-    text-align: center;
+  .main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    translate: -50% -50%;
     font-family: 'Belita', sans-serif;
-    font-size: 90px; 
-    margin-top: 230px;
+    font-size: 80px;
     color: #ff7f00;
   -webkit-text-stroke: rgb(0, 0, 0) 1px; 
 }
@@ -327,6 +328,7 @@ a.hover {
 }
 
 @media (max-width: 952px) {
+  /* login */
   .logincontainer {
     position: absolute;
     width: 75%;
@@ -365,8 +367,42 @@ a.hover {
     top: 30%;
     left: 10%;
   }
-  .nav-list {
-    margin: 10px;
-    padding: 10px;
+  /* home */
+  .logo {
+    height: 50px;
+    width: 50px;
+    left: 5%;
   }
+  .main {
+    top: 5%;
+    left: 43%;
+    font-size: 20px;
+  }
+  .nav-list{
+    left: 11%;
+    margin-top: 57px;
+    
+  }
+  .nav-list a {
+    padding: 10px;
+    margin: 10px;
+  }
+  .login {
+    top: 3.5%;
+    left: 80%;
+  }
+  body {
+    background: beige;
+  }
+  .description {
+  backdrop-filter: none;
+  width: 300px;
+  padding: 20px;
+  left: 13%;
+  top: 30%;
+  border:none;
+  border-radius: 0;
+  font-size: 12px;
+  }
+
 }
