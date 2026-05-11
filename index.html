@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CPTR 325 Final Project - Windows Server Lab Network</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <div class="logo">CPTR 325</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#members" class="nav-link">Members</a></li>
+        <li><a href="#requirements" class="nav-link">Requirements</a></li>
+        <li><a href="#reflection" class="nav-link">Reflection</a></li>
+        <li><a href="#references" class="nav-link">References</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-content">
+      <h1>Windows Server 2012 R2 Lab Network</h1>
+      <p>A computer laboratory network system using Active Directory, DHCP, and Group Policy for managing 40 workstations.</p>
+      <a href="#requirements" class="btn" target="_blank">View Requirements →</a>
+    </div>
+  </header>
+
+  <!-- Project Description -->
+  <section class="section" id="project">
+    <div class="container two-column">
+      <div>
+        <h2>Project Overview</h2>
+        <p>Comprehensive Windows Server 2012 deployment featuring Active Directory Domain Services, DHCP, Group Policy Objects, roaming profiles, printer sharing, and remote administration for a production computer laboratory environment.</p>
+      </div>
+      <div>
+        <img src="1.png" alt="Windows Server Manager Dashboard" class="responsive-image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Group Members -->
+  <section class="section bg-light" id="members">
+    <div class="container">
+
+  <h1 class="title">Team Members</h1>
+
+  <div class="team-grid">
+
+    <!-- MEMBER 1 -->
+    <div class="member-card">
+
+      <div class="photo-box">
+        <!-- REPLACE IMAGE -->
+        <img src="img/download (2).jpg" alt="Member 1">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="member-info">
+        <div class="member-name">
+          JULIUS HANZ <br>
+          BRENT P. PASCUA
+        </div>
+
+        <div class="role">
+          Server Requirements Implementation
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MEMBER 2 -->
+    <div class="member-card">
+
+      <div class="photo-box">
+        <!-- REPLACE IMAGE -->
+        <img src="img/jus.jpg" alt="Member 2">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="member-info">
+        <div class="member-name">
+          JUSTIN I. <br>
+          RALUSTIAN
+        </div>
+
+        <div class="role">
+          Website Development
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MEMBER 3 -->
+    <div class="member-card">
+
+      <div class="photo-box">
+        <!-- REPLACE IMAGE -->
+        <img src="img/download.jpg" alt="Member 3">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="member-info">
+        <div class="member-name">
+          VALERIE SHANE <br>
+          G. GANAL
+        </div>
+
+        <div class="role">
+          Client Requirements Implementation
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MEMBER 4 -->
+    <div class="member-card">
+
+      <div class="photo-box">
+        <!-- REPLACE IMAGE -->
+        <img src="img/bry.jpg" alt="Member 4">
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="member-info">
+        <div class="member-name">
+          BRYAN STEVE <br>
+          MEJIA
+        </div>
+
+        <div class="role">
+          Written Documentation
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  </section>
+
+  <!-- Requirements Overview -->
+<section class="section" id="requirements">
+  <div class="container">
+    <h2>Detailed Requirements (1–16)</h2>
+    <p>Click each requirement to view full procedures and implementation details:</p>
+
+    <div class="cards">
+
+      <article class="card">
+        <h3>1. Domain Controller Setup</h3>
+        <p>Configure server as Domain Controller and join all 40 client computers to the domain.</p>
+        <a href="req1.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>2. IP Addressing and DHCP</h3>
+        <p>Assign static IP to server and configure DHCP for automatic client IP distribution.</p>
+        <a href="req2.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>3. User Accounts and OUs</h3>
+        <p>Create teacher and student accounts organized using Organizational Units (OUs).</p>
+        <a href="req3.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>4. Automatic Shutdown</h3>
+        <p>Schedule automatic shutdown of all client computers at 11:30 AM daily.</p>
+        <a href="req4.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>5. Logon Time Restrictions</h3>
+        <p>Restrict user login based on assigned class schedules.</p>
+        <a href="req5.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>6. Workstation Assignment</h3>
+        <p>Limit students to their assigned computer only.</p>
+        <a href="req6.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>7. Home Folders & Quota</h3>
+        <p>Create secure home folders with 100MB storage limit.</p>
+        <a href="req7.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>8. Delegated Admin Rights</h3>
+        <p>Allow teachers limited control over student accounts in their class.</p>
+        <a href="req8.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>9. Remote Desktop Services (BONUS)</h3>
+        <p>Enable server-based application delivery using RDS.</p>
+        <a href="req9.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>10. Remove Shutdown Options</h3>
+        <p>Disable shutdown and restart options for student accounts.</p>
+        <a href="req10.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>11. Roaming Profiles (Students)</h3>
+        <p>Enable roaming profiles with restricted desktop settings.</p>
+        <a href="req11.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>12. Network & USB Restrictions</h3>
+        <p>Restrict network access for selected classes and disable USB for students.</p>
+        <a href="req12.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>13. Roaming Profiles (Teachers)</h3>
+        <p>Enable customizable roaming profiles for teachers.</p>
+        <a href="req13.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>14. Remote Server Administration</h3>
+        <p>Allow remote management of the server using RDP and RSAT tools.</p>
+        <a href="req14.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>15. Printer Sharing & Priority</h3>
+        <p>Configure shared printer with class-based priority and scheduling.</p>
+        <a href="req15.html" class="card-link">View Steps →</a>
+      </article>
+
+      <article class="card">
+        <h3>16. Remote OS Deployment (BONUS)</h3>
+        <p>Deploy operating systems remotely using WDS or RIS.</p>
+        <a href="req16.html" class="card-link">View Steps →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="section" id="reflection">
+    <div class="container">
+      <h2>Technical Reflection</h2>
+      <p>Successfully deployed an enterprise-grade Windows Server infrastructure with fully operational network services and centralized management. Resolved DHCP conflicts through accurate scope planning and exclusion configuration, corrected Group Policy inheritance problems by redesigning Organizational Unit structures, and improved roaming profile synchronization using DFS Namespace and shared storage optimization for better reliability and performance.</p>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section class="section bg-light" id="references">
+    <div class="container">
+      <h2>References & Sources</h2>
+      <ul class="references-list">
+        <li><strong>Microsoft Docs:</strong> Active Directory Domain Services (<a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" target="_blank">link</a>)</li>
+        <li><strong>Microsoft Docs:</strong> DHCP Server (<a href="https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top" target="_blank">link</a>)</li>
+        <li>CPTR 325 Final Project Manual, Mariano Marcos State University, 2026</li>
+        <li>Oracle VirtualBox 7.0 Documentation (<a href="https://www.virtualbox.org/manual/" target="_blank">link</a>)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 CPTR 325 Final Project | Mariano Marcos State University</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
+
